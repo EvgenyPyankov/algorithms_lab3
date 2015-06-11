@@ -1,12 +1,14 @@
 public class Graph {
     int [][]adjacencyMatrix;
+    Edge[]edges;
     int m;
     int n;
 
-    public Graph(int[][]adjacencyMatrix, int m, int n){
+    public Graph(int[][]adjacencyMatrix, Edge[]edges, int m, int n){
         this.m=m;
         this.n=n;
         this.adjacencyMatrix=adjacencyMatrix;
+        this.edges=edges;
     }
 
     void printGraph(){
